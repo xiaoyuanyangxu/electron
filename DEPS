@@ -12,7 +12,7 @@ gclient_gn_args = [
 
 vars = {
   'chromium_version':
-    '',
+    'ddac4c3cc1528254008f9e7a2aea5d4426906bfd',
   'node_version':
     'v12.16.1',
   'nan_version':
@@ -23,7 +23,7 @@ vars = {
   'requests_version': 'e4d59bedfd3c7f4f254f4f5d036587bcd8152458',
 
   'boto_git': 'https://github.com/boto',
-  'chromium_git': 'https://github.com/xiaoyuanyangxu',
+  'chromium_git': 'https://chromium.googlesource.com',
   'electron_git': 'https://github.com/electron',
   'nodejs_git': 'https://github.com/nodejs',
   'requests_git': 'https://github.com/kennethreitz',
@@ -76,7 +76,7 @@ vars = {
 
 deps = {
   'src': {
-    'url': (Var("chromium_git")) + '/chromium.git' + (Var("chromium_version")),
+    'url': 'https://github.com/xiaoyuanyangxu' + '/chromium.git',
     'condition': 'checkout_chromium and process_deps',
   },
   'src/third_party/nan': {
